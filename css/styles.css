@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#top {
+    background-color: hsl(0,0%,95%);
+    color: hsl(0,0%,20%);
+    text-align: center;
+}
+
+#top #title{
+
+    padding: 5vmin 10px 1vmin;
+    font-size: 6vmin;
+    font-weight: 1000;
+}
+
+#top #subtitle{
+    padding: 1vmin 10px 5vmin;
+}
+
+
+#img-div {
+    color: hsl(0,0%,20%);
+    text-align: center;
+}
+
+#img-div #image {
+    max-width: min(500px,100%);
+    height: auto;
+    margin-top: 3vmin;
+}
+
+#image #img-caption {
+
+}
+
+#bottom {
+    display: grid;
+    grid-template-columns: 1fr min(500px, 80%) 1fr;
+    grid-template-areas:
+    ". title ."
+    ". chrono ."
+    ". visit .";
+
+    align-content: center;
+    background-color: hsl(0,0%,95%);
+    color: hsl(0,0%,20%);
+}
+
+#bottom #section-title {
+    grid-area: title;
+    text-align: center;
+    padding: 5vmin 10px 1vmin;
+}
+#bottom #chrono-list {
+    grid-area: chrono;
+}
+#bottom #chrono-list li {
+    margin: 0 0 5px 0;
+}
+
+#bottom #visit {
+    grid-area: visit;
+    text-align: center;
+    padding: 5vmin 10px 1vmin;
+    font-size: 3vmin;
+}
+
